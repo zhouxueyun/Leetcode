@@ -1,6 +1,40 @@
 
 import UIKit
 
+/**
+ Binary Tree Preorder Traversal
+ 
+ Given a binary tree, return the preorder traversal of its nodes' values.
+ Example:
+ Input: [1,null,2,3]
+ 1
+  \
+   2
+  /
+ 3
+ 
+ Output: [1,2,3]
+ Follow up: Recursive solution is trivial, could you do it iteratively?
+ */
+
+/**
+ Binary Tree Postorder Traversal
+ 
+ Given a binary tree, return the postorder traversal of its nodes' values.
+ 
+ Example:
+ 
+ Input: [1,null,2,3]
+ 1
+  \
+   2
+  /
+ 3
+ 
+ Output: [3,2,1]
+ Follow up: Recursive solution is trivial, could you do it iteratively?
+ */
+
 class TreeNode {
     public var val: Int
     public var left: TreeNode?
@@ -12,13 +46,13 @@ class TreeNode {
     }
 }
 
-func preOrderPrint(_ node: TreeNode?) {
+func preorderPrint(_ node: TreeNode?) {
     guard let node = node else {
         return
     }
     print(node.val, terminator: " ")
-    preOrderPrint(node.left)
-    preOrderPrint(node.right)
+    preorderPrint(node.left)
+    preorderPrint(node.right)
 }
 
 func preorderTraversal(_ root: TreeNode?) -> [Int] {
@@ -49,13 +83,13 @@ func preorderTraversal(_ root: TreeNode?) -> [Int] {
     return ret
 }
 
-func inOrderPrint(_ node: TreeNode?) {
+func inorderPrint(_ node: TreeNode?) {
     guard let node = node else {
         return
     }
-    inOrderPrint(node.left)
+    inorderPrint(node.left)
     print(node.val, terminator: " ")
-    inOrderPrint(node.right)
+    inorderPrint(node.right)
 }
 
 func inorderTraversal(_ root: TreeNode?) -> [Int] {
@@ -105,8 +139,8 @@ func inorderTraversal1(_ root: TreeNode?) -> [Int] {
     flags.append(true)
     
     while !stack.isEmpty {
-        var flag = flags.popLast()!
-        var node = stack.popLast()!
+        let flag = flags.popLast()!
+        let node = stack.popLast()!
         if flag {
             if let right = node.right {
                 stack.append(right)
@@ -126,12 +160,12 @@ func inorderTraversal1(_ root: TreeNode?) -> [Int] {
     return ret
 }
 
-func postOrderPrint(_ node: TreeNode?) {
+func postorderPrint(_ node: TreeNode?) {
     guard let node = node else {
         return
     }
-    postOrderPrint(node.left)
-    postOrderPrint(node.right)
+    postorderPrint(node.left)
+    postorderPrint(node.right)
     print(node.val, terminator: " ")
 }
 
@@ -149,8 +183,8 @@ func postorderTraversal(_ root: TreeNode?) -> [Int] {
     flags.append(true)
     
     while !stack.isEmpty {
-        var flag = flags.popLast()!
-        var node = stack.popLast()!
+        let flag = flags.popLast()!
+        let node = stack.popLast()!
         if flag {
             stack.append(node)
             flags.append(false)
@@ -183,16 +217,16 @@ root.left = left
 root.right = right
 
 preorderTraversal(root)
-preOrderPrint(root)
+preorderPrint(root)
 print()
 
 inorderTraversal(root)
 inorderTraversal1(root)
-inOrderPrint(root)
+inorderPrint(root)
 print()
 
 postorderTraversal(root)
-postOrderPrint(root)
+postorderPrint(root)
 print()
 
 

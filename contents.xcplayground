@@ -6,8 +6,12 @@
         <page name='Problem134'/>
         <page name='Problem136'/>
         <page name='Problem137'/>
+        <page name='Problem138'/>
         <page name='Problem139'/>
         <page name='Problem140'/>
+        <page name='Problem141'/>
+        <page name='Problem142'/>
+        <page name='Problem143'/>
         <page name='Problem144-155'/>
         <page name='Problem146'/>
         <page name='Problem147'/>
@@ -17,6 +21,6 @@
         <page name='Problem152'/>
         <page name='Problem153-154'/>
         <page name='Problem155'/>
-        <page name='Problem166'/>
+        <page name='Problem160'/>
     </pages>
 </playground>
