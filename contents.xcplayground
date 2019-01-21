@@ -2,6 +2,7 @@
 <playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
     <pages>
         <page name='First'/>
+        <page name='Problem5'/>
         <page name='Problem132'/>
         <page name='Problem134'/>
         <page name='Problem136'/>
@@ -22,5 +23,20 @@
         <page name='Problem153-154'/>
         <page name='Problem155'/>
         <page name='Problem160'/>
+        <page name='Problem162'/>
+        <page name='Problem164'/>
+        <page name='Problem165'/>
+        <page name='Problem166'/>
+        <page name='Problem168'/>
+        <page name='Problem169'/>
+        <page name='Problem171'/>
+        <page name='Problem172'/>
+        <page name='Problem173'/>
+        <page name='Problem179'/>
+        <page name='Problem187'/>
+        <page name='Problem188'/>
+        <page name='Problem189'/>
+        <page name='Problem198'/>
+        <page name='Problem199'/>
     </pages>
 </playground>
