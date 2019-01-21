@@ -2,7 +2,20 @@
 <playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
     <pages>
         <page name='First'/>
+        <page name='Problem1'/>
+        <page name='Problem2'/>
+        <page name='Problem3'/>
         <page name='Problem5'/>
+        <page name='Problem6'/>
+        <page name='Problem7'/>
+        <page name='Problem8'/>
+        <page name='Problem9'/>
+        <page name='Problem11'/>
+        <page name='Problem12'/>
+        <page name='Problem13'/>
+        <page name='Problem14'/>
+        <page name='Problem15'/>
+        <page name='Problem16'/>
         <page name='Problem132'/>
         <page name='Problem134'/>
         <page name='Problem136'/>
