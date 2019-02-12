@@ -23,6 +23,15 @@ class ListNode {
     }
 }
 
+func printNode(_ node: ListNode?) {
+    var node = node
+    while node != nil {
+        print(node!.val, terminator: "->")
+        node = node?.next
+    }
+    print()
+}
+
 func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     let dummy = ListNode(0)
     var node = dummy
@@ -61,15 +70,6 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     }
     
     return dummy.next
-}
-
-func printNode(_ node: ListNode?) {
-    var node = node
-    while node != nil {
-        print(node!.val, terminator: " ")
-        node = node?.next
-    }
-    print()
 }
 
 let node1 = ListNode(2)

@@ -26,7 +26,7 @@ class ListNode {
 func printNode(_ node: ListNode?) {
     var node = node
     while node != nil {
-        print(node!.val, terminator: " ")
+        print(node!.val, terminator: "->")
         node = node?.next
     }
     print()

@@ -78,7 +78,7 @@ func reorderList(_ head: ListNode?) {
 func printNode(_ head: ListNode?) {
     var node = head
     while node != nil {
-        print(node!.val, terminator: " ")
+        print(node!.val, terminator: "->")
         node = node!.next
     }
     print()
